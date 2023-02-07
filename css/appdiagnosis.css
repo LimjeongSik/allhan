@@ -1,0 +1,141 @@
+.title {
+    font-size: 16px;
+    letter-spacing: -0.32px;
+    color: #252525;
+    font-family: "NSR-EB";
+}
+.app {
+    height: calc(100% - 64px);
+    padding-top: 64px;
+}
+.app__header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    width: 100%;
+    height: 64px;
+    background: #fff;
+    z-index: 9999;
+}
+.app__header .btn__prev img {
+    width: 10px;
+    height: auto;
+    padding: 23px 20px;
+    cursor: pointer;
+}
+.app__header .app__header-title {
+    text-align: center;
+}
+.app__header .app__header-title span {
+    font-size: 15px;
+    letter-spacing: -0.6px;
+    color: #000;
+    font-family: "NS-EB";
+}
+section {
+    margin-top: 10px;
+    padding: 0 20px;
+}
+.section__top-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.section__top-title h2 {
+    font-size: 15px;
+    letter-spacing: -0.68px;
+    color: #484848;
+    font-family: "NS-B";
+}
+.section__top-title .btn__search {
+    width: 18px;
+    height: 18px;
+    background: url(../images/btns/btn_search.png) no-repeat center/ cover;
+    cursor: pointer;
+}
+.btn__tabs {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 15px;
+    grid-gap: 15px;
+}
+.btn__tabs .tab {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    border-radius: 10px;
+    background: #f5f5f5;
+    box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.08);
+    padding-left: 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.btn__tabs .tab img {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+.btn__tabs .tab .tab__info {
+    display: flex;
+    flex-direction: column;
+}
+.btn__tabs .tab .tab__info h6 {
+    font-size: 15px;
+    color: #252525;
+    font-family: "NS-B";
+    margin-bottom: 6px;
+}
+.btn__tabs .tab .tab__info span {
+    font-size: 13px;
+    letter-spacing: -0.28px;
+    color: #767676;
+    font-family: "NSR-B";
+}
+.btn__tabs .tab.active {
+    background: rgba(18, 108, 253, 0.82);
+}
+.btn__tabs .tab.active .tab__info h6,
+.btn__tabs .tab.active .tab__info span {
+    color: #fff;
+}
+
+.faq {
+    margin-top: 32px;
+}
+.faq ul {
+    margin-top: 27px;
+}
+.faq ul li:not(:last-child) {
+    margin-bottom: 22px;
+}
+.faq ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.faq ul li .faq__l {
+    display: flex;
+    align-items: center;
+}
+.faq ul li .faq__l img {
+    width: 26px;
+    height: 26px;
+    margin-right: 15px;
+}
+.faq ul li .faq__l span {
+    font-size: 15px;
+    letter-spacing: -0.3px;
+    color: #454545;
+    font-family: "NSR-B";
+}
+.faq ul li .btn__more {
+    width: 7px;
+    height: 12px;
+    background: url(../images/btns/btn_more.png) no-repeat center/ cover;
+}

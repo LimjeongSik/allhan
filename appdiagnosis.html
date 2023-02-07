@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/appdiagnosis.css" />
+        <title>비대면 진료</title>
+    </head>
+    <body>
+        <div class="app">
+            <header class="app__header">
+                <div class="btn__prev">
+                    <img src="images/btns/btn_prev.png" alt="" />
+                </div>
+                <div class="app__header-title"><span>비대면 진료</span></div>
+                <div></div>
+            </header>
+            <section>
+                <div class="section__top-title">
+                    <h2>상담 가능한 한의사 선생님을 만나보세요.</h2>
+                    <div class="btn__search"></div>
+                </div>
+                <div class="btn__tabs">
+                    <div class="tab">
+                        <img src="images/icons/ic_consulting.png" alt="" />
+                        <div class="tab__info">
+                            <h6>명의닥 상담</h6>
+                            <span>한의원 선생님이 상담해드려요.</span>
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <img src="images/icons/ic_call.png" alt="" />
+                        <div class="tab__info">
+                            <h6>현재 진료가능한 한의원</h6>
+                            <span>바로 진료 가능한 한의원을 추천해드려요.</span>
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <img src="images/icons/ic_now.png" alt="" />
+                        <div class="tab__info">
+                            <h6>초특급 바로바로 진료하기</h6>
+                            <span>바로 진료 가능한 한의원을 추천해드려요.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq">
+                    <h2 class="title">자주 묻는 질문</h2>
+                    <ul>
+                        <li>
+                            <div class="faq__l">
+                                <img src="images/icons/ic_process.png" alt="" />
+                                <span>비대면 진료과정은 어떻게 되나요?</span>
+                            </div>
+                            <div class="btn__more"></div>
+                        </li>
+                        <li>
+                            <div class="faq__l">
+                                <img
+                                    src="images/icons/ic_expenses.png"
+                                    alt=""
+                                />
+                                <span>진료비는 어떻게 수납하나요?</span>
+                            </div>
+                            <div class="btn__more"></div>
+                        </li>
+                        <li>
+                            <div class="faq__l">
+                                <img
+                                    src="images/icons/ic_prescriptiondrug.png"
+                                    alt=""
+                                />
+                                <span>비대면 처방약을 처방받을 수 있나요?</span>
+                            </div>
+                            <div class="btn__more"></div>
+                        </li>
+                        <li>
+                            <div class="faq__l">
+                                <img
+                                    src="images/icons/ic_prescription.png"
+                                    alt=""
+                                />
+                                <span>비대면 처방전을 받을 수 있나요?</span>
+                            </div>
+                            <div class="btn__more"></div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <script>
+            const tabs = document.querySelectorAll(".tab");
+            tabs.forEach((item) => {
+                item.addEventListener("click", (e) => {
+                    for (ac of tabs) {
+                        ac.classList.remove("active");
+                    }
+                    e.currentTarget.classList.add("active");
+                });
+            });
+        </script>
+    </body>
+</html>

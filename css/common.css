@@ -1,0 +1,24 @@
+/* Common Root css */
+:root {
+    /* main font weight */
+    --regular: 400;
+    --medium: 500;
+    --semibold: 600;
+    --bold: 700;
+    --extrabold: 800;
+    /* main color */
+    --main-white: #ffffff;
+    --main-black: #000000;
+}
+/* Common */
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+html {
+    font-size: 20px;
+}
+body {
+    font-size: 1rem;
+}

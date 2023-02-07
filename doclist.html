@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/slide.min.css" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/doclist.css" />
+        <title>비대면 진료</title>
+    </head>
+    <body>
+        <div class="app">
+            <header class="app__header">
+                <div class="btn__prev">
+                    <img src="images/btns/btn_prev.png" alt="" />
+                </div>
+                <div class="app__header-title"><span>비대면 진료</span></div>
+                <div></div>
+            </header>
+            <section>
+                <div class="consulting__title">
+                    <span>상담 가능한 한의사 선생님을 만나보세요.</span>
+                    <div class="options">
+                        <div class="btn__search"></div>
+                        <div class="btn__filter"></div>
+                    </div>
+                </div>
+                <div class="tags">
+                    <div class="swiper tagSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="item">#<span>태그</span></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="item">#<span>태그</span></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="item">#<span>태그</span></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="item">#<span>태그</span></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="item">#<span>태그</span></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="item">#<span>태그</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="doclist">
+                    <ul>
+                        <li>
+                            <div class="doc__profile"></div>
+                            <div class="doc__info">
+                                <div class="doctor_state">
+                                    <span class="doc_name"
+                                        >다산 경희한의원</span
+                                    >
+                                    <div class="state possible">
+                                        <img
+                                            src="images/icons/ic_clock2.png"
+                                            alt=""
+                                        />
+                                        <span>상담가능</span>
+                                    </div>
+                                </div>
+                                <span class="hosname">서울시</span>
+                                <div class="rank">
+                                    <img
+                                        src="images/icons/ic_rank.png"
+                                        alt=""
+                                    />
+                                    <span>5.0 (20+)</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="doc__profile"></div>
+                            <div class="doc__info">
+                                <div class="doctor_state">
+                                    <span class="doc_name"
+                                        >다산 경희한의원</span
+                                    >
+                                    <div class="state impossible">
+                                        <img
+                                            src="images/icons/ic_clock2.png"
+                                            alt=""
+                                        />
+                                        <span>상담중</span>
+                                    </div>
+                                </div>
+                                <span class="hosname">서울시</span>
+                                <div class="rank">
+                                    <img
+                                        src="images/icons/ic_rank.png"
+                                        alt=""
+                                    />
+                                    <span>5.0 (20+)</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <script src="js/jquery.js"></script>
+        <script src="js/swiper-bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper(".tagSwiper", {
+                slidesPerView: "auto",
+                spaceBetween: 8,
+            });
+        </script>
+    </body>
+</html>

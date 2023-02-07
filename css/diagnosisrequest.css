@@ -1,0 +1,500 @@
+.title {
+    font-size: 15px;
+    letter-spacing: -0.6px;
+    color: #000;
+    font-family: "NS-EB";
+}
+.sub {
+    font-size: 13px;
+    letter-spacing: -0.52px;
+    color: #9a9a9a;
+    font-family: "NS-R";
+    padding-top: 11px;
+}
+.app {
+    min-height: calc(100% - 64px);
+    padding-top: 64px;
+    background: #f5f5f5;
+}
+.app__header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    width: 100%;
+    height: 64px;
+    background: #fff;
+    z-index: 9999;
+}
+.app__header .btn__prev img {
+    width: 10px;
+    height: auto;
+    padding: 23px 20px;
+    cursor: pointer;
+}
+.app__header .app__header-title {
+    text-align: center;
+}
+.app__header .app__header-title span {
+    font-size: 15px;
+    letter-spacing: -0.6px;
+    color: #000;
+    font-family: "NS-EB";
+}
+section {
+    background: #fff;
+    padding: 20px;
+}
+section:not(:last-child) {
+    margin-bottom: 12px;
+}
+.user {
+    overflow: hidden;
+    margin-top: 26px;
+}
+.user .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+.addSwiper .swiper-slide {
+    width: fit-content;
+}
+.user .item img {
+    width: 63px;
+    height: 63px;
+    margin-bottom: 9px;
+}
+.user .item span {
+    font-size: 13px;
+    letter-spacing: -0.52px;
+    color: #000;
+    font-family: "NS-R";
+}
+.inputbox {
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+    letter-spacing: -1.12px;
+    color: #000;
+    font-family: "NS-R";
+    gap: 11px;
+    grid-gap: 11px;
+    margin-top: 15px;
+}
+.inputbox input {
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+    font-family: "NS-R";
+    background: #f5f5f5;
+    border-radius: 3px;
+    padding: 11px 0;
+    width: 100%;
+    max-width: 130px;
+    box-sizing: border-box;
+}
+.inputbox > div {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+.inputbox > div span {
+    font-size: 16px;
+    letter-spacing: -0.64px;
+    color: #000;
+    font-family: "NS-R";
+    margin-right: 11px;
+}
+.inputbox > div .input {
+    max-width: 100%;
+    text-align: left;
+    padding-left: 11px;
+}
+.textarea {
+    width: 100%;
+    height: 129px;
+    border-radius: 3px;
+    background: #f5f5f5;
+    padding: 10px 11px;
+    font-size: 13px;
+    color: #000;
+    font-family: "NS-R";
+    letter-spacing: -0.34px;
+    line-height: 18px;
+    box-sizing: border-box;
+    margin-top: 11px;
+}
+.attachimg {
+    margin-top: 31px;
+}
+.attachimg .sub {
+    line-height: 18px;
+}
+.fileinput {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.fileinput .imgview {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px 8px;
+    grid-gap: 8px 8px;
+    margin-right: 8px;
+}
+.fileinput .imgview div {
+    display: inline-block;
+    width: 60px;
+    height: 75px;
+    border-radius: 3px;
+    background: #f5f5f5;
+}
+.fileinput input {
+    display: none;
+}
+.fileinput label {
+    display: inline-block;
+    width: 60px;
+    height: 75px;
+    border-radius: 3px;
+    background: url(../images/btns/btn_addfile.png) no-repeat center / 18px 18px,
+        #f5f5f5;
+}
+.credit {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 15px 0;
+    background: #f5f5f5;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+.credit span {
+    font-size: 14px;
+    letter-spacing: -0.56px;
+    color: #6f6f6f;
+    font-family: "NS-B";
+}
+.credit img {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 18px;
+    width: 27px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+.agreement {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    gap: 10px;
+    grid-gap: 10px;
+}
+.agreement > div {
+    display: flex;
+    align-items: center;
+}
+.agreement > div.moreflex {
+    justify-content: space-between;
+}
+.agreement > div.moreflex > div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.agreement > div span {
+    font-size: 14px;
+    letter-spacing: -0.56px;
+    color: #000;
+    font-family: "NS-B";
+}
+.agreement > div a {
+    font-size: 13px;
+    letter-spacing: -0.52px;
+    color: #404040;
+    font-family: "NS-R";
+    flex: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.agreement > div a img {
+    width: 7px;
+}
+.agreement > div .checkbox {
+    margin-right: 10px;
+}
+.agreement > div .checkbox label {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url(../images/btns/btn_check_off.png) no-repeat center / cover;
+}
+.agreement > div .checkbox input[type="checkbox"]:checked + label {
+    background: url(../images/btns/btn_check_on.png) no-repeat center / cover;
+}
+
+.btn__request {
+    width: 100%;
+    height: 54px;
+    border-radius: 5px;
+    background: #65a0ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 40px auto 0;
+}
+.btn__request span {
+    font-size: 17px;
+    letter-spacing: -0.68px;
+    color: #fff;
+    font-family: "NS-B";
+}
+
+/* popup */
+.request__check-popup {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    visibility: hidden;
+}
+.request__check-popup.active {
+    visibility: visible;
+}
+.request__check-popup__close {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.76);
+    z-index: 50;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+.request__check-popup.active .request__check-popup__close {
+    opacity: 1;
+}
+.request__check {
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    width: 100%;
+    min-height: 330px;
+    padding: 36px 24px 10px;
+    background: #fff;
+    border-radius: 20px 20px 0 0;
+    box-sizing: border-box;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: bottom 0.3s ease-out;
+}
+.request__check-popup.active .request__check {
+    bottom: 0;
+}
+
+.request__check > img {
+    width: 23px;
+    margin-bottom: 23px;
+}
+.request__check > h2 {
+    font-size: 20px;
+    color: #000;
+    font-family: "NS-B";
+}
+.request__info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 22px 10px;
+    background: #f5f5f5;
+    border-radius: 4px;
+    gap: 20px;
+    grid-gap: 20px;
+    margin: 31px 0 50px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.request__info > div {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    grid-gap: 11px;
+}
+.request__info > div > div {
+    display: flex;
+    align-items: center;
+    gap: 11px 0;
+    grid-gap: 11px 0;
+    flex-wrap: wrap;
+}
+.request__info > div > div strong {
+    font-size: 12px;
+    color: #505050;
+    font-family: "NS-B";
+    margin-right: 12px;
+    word-break: keep-all;
+}
+.request__info > div > div span {
+    font-size: 12px;
+    color: #0062ff;
+    font-family: "NS-B";
+    word-break: keep-all;
+}
+.popup__btns {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    width: calc(100% - 20px);
+    gap: 12px;
+    grid-gap: 12px;
+    margin-bottom: 10px;
+}
+.popup__btns .pbtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    height: 54px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.popup__btns .pbtn span {
+    font-size: 17px;
+    color: #fff;
+    font-family: "NS-B";
+}
+.popup__btns .btn__replace-pop {
+    background: #65a0ff;
+}
+.popup__btns .btn__request-pop {
+    background: rgba(250, 18, 18, 0.78);
+}
+
+.request__popup {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    visibility: hidden;
+}
+.request__popup.active {
+    visibility: visible;
+}
+.request__popup__close {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.76);
+    z-index: 50;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    transition-delay: 0.1s;
+}
+.request__popup.active .request__popup__close {
+    opacity: 1;
+}
+.request__con-view {
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    width: 100%;
+    min-height: 330px;
+    padding: 36px 24px 10px;
+    background: #fff;
+    border-radius: 20px 20px 0 0;
+    box-sizing: border-box;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: bottom 0.3s ease-out;
+    transition-delay: 0.1s;
+}
+.request__popup.active .request__con-view {
+    bottom: 0;
+}
+
+.request__con-view > img {
+    width: 25px;
+    margin-bottom: 15px;
+}
+.request__con-view > h2 {
+    font-size: 20px;
+    color: #000;
+    font-family: "NS-B";
+}
+.request__content {
+    margin-top: 30px;
+    text-align: center;
+}
+.request__content > span {
+    font-size: 15px;
+    line-height: 24px;
+    color: #000;
+    font-family: "NS-B";
+}
+.request__content > span span {
+    color: #126afa;
+}
+.request__content > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 11px;
+}
+.request__content > div img {
+    width: 14px;
+    margin-right: 7px;
+}
+.request__content > div span {
+    font-size: 13px;
+    color: #989898;
+    font-family: "NS-B";
+}
+.btn__close-pop {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    margin-bottom: 10px;
+    width: calc(100% - 20px);
+    height: 54px;
+    background: #65a0ff;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.btn__close-pop span {
+    font-size: 17px;
+    letter-spacing: 5.1px;
+    color: #fff;
+    font-family: "NS-B";
+}
