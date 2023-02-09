@@ -1,0 +1,211 @@
+.title {
+    font-size: 16px;
+    color: #121212;
+    font-family: "NS-EB";
+}
+.app {
+    min-height: calc(100% - 64px);
+    padding-top: 64px;
+    display: flex;
+    flex-direction: column;
+}
+.app__header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    width: 100%;
+    height: 64px;
+    background: #fff;
+    z-index: 9999;
+}
+.app__header .btn__prev img {
+    width: 10px;
+    height: auto;
+    padding: 23px 20px;
+    cursor: pointer;
+}
+.app__header .app__header-title {
+    text-align: center;
+}
+.app__header .app__header-title span {
+    font-size: 15px;
+    letter-spacing: -0.6px;
+    color: #000;
+    font-family: "NS-EB";
+}
+section {
+    padding: 23px 20px 0;
+    background: #f5f5f5;
+    flex: 1;
+}
+.history {
+    margin-top: 23px;
+    padding-bottom: 20px;
+}
+.history li {
+    padding: 16px 15px;
+    border-radius: 10px;
+    border: 1px solid #efefef;
+    box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.04);
+    background: #fff;
+}
+.history li:not(:last-child) {
+    margin-bottom: 15px;
+}
+.state {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.state .history__date {
+    display: flex;
+    align-items: center;
+}
+.state .history__date img {
+    width: 14px;
+    margin-right: 5px;
+}
+.state .history__date span {
+    font-size: 12px;
+    line-height: 1;
+    font-family: "NS-R";
+    color: #9ca6b4;
+}
+.state > div {
+    display: flex;
+    align-items: center;
+}
+.state > div .eval {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 3px;
+}
+.state > div span {
+    font-size: 12px;
+    letter-spacing: -0.6px;
+    font-family: "NS-EB";
+}
+.state > div.intreatment .eval {
+    background: #ff6262;
+}
+.state > div.intreatment span {
+    color: #ff6262;
+}
+.state > div.completion .eval {
+    background: #15b85b;
+}
+.state > div.completion span {
+    color: #15b85b;
+}
+.state > div.waiting .eval {
+    background: #c6c6c6;
+}
+.state > div.waiting span {
+    color: #c6c6c6;
+}
+
+.hos__info {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.hos__info-profileimg {
+    min-width: 71px;
+    min-height: 71px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #f5f5f5;
+    margin-right: 15px;
+}
+.hos__info-con {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    grid-gap: 7px;
+}
+.hos__info-con h2 {
+    font-size: 16px;
+    letter-spacing: -0.8px;
+    color: #000;
+    font-family: "NS-EB";
+    line-height: 1;
+}
+.hos__info-con span {
+    font-size: 13px;
+    color: #414141;
+    letter-spacing: -0.6px;
+    font-family: "NS-B";
+}
+.hos__info-con p {
+    font-size: 13px;
+    color: #414141;
+    letter-spacing: -0.6px;
+    font-family: "NS-B";
+    line-height: 19px;
+    line-height: 1;
+}
+.state__con {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    border-radius: 23px;
+    margin-top: 18px;
+}
+.state__con img {
+    width: 14px;
+    margin-right: 5px;
+}
+.state__con span {
+    font-size: 12px;
+    letter-spacing: -0.6px;
+    font-family: "NS-B";
+}
+.state__con.intreatment {
+    background: #f2f5f9;
+}
+.state__con.intreatment span {
+    color: #8b9aaf;
+}
+.state__con.completion {
+    background: #c1e3e8;
+}
+.state__con.completion span {
+    color: #265d65;
+}
+.state__con.waiting {
+    border-radius: 0;
+    padding: 0;
+}
+.wating__time {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    grid-gap: 10px;
+}
+.state__con.waiting span {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eaeaea;
+    font-size: 14px;
+    color: #cbcbcb;
+    padding: 10px 0;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+.state__con.waiting span.on {
+    color: #fff;
+    background: #5f94dd;
+}
